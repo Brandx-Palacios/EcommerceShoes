@@ -1,0 +1,486 @@
+[
+    {
+        "NOMBRE": "123123123",
+        "DESCRIPCION": "123123",
+        "SKU": "1231231",
+        "PRECIO": "123123123",
+        "DESCUENTO": "2",
+        "ID_CATEGORIA": "6",
+        "colores": [
+            {
+                "ID_COLOR": "4",
+                "IMAGENES": [
+                    "img_66db91943f9636.96964939.jpg",
+                    "img_66db91943fac43.14827892.png",
+                    "img_66db9194423d93.05684513.png"
+                ]
+            }
+        ],
+        "TALLAS": [
+            {
+                "ID_TALLA": "1",
+                "CANTIDAD": "1212"
+            },
+            {
+                "ID_TALLA": "2",
+                "CANTIDAD": "1212"
+            }
+        ]
+    },
+    {
+        "NOMBRE": "123123123",
+        "DESCRIPCION": "123123",
+        "SKU": "1231231",
+        "PRECIO": "123123123",
+        "DESCUENTO": "2",
+        "ID_CATEGORIA": "6",
+        "colores": [
+            {
+                "ID_COLOR": "4",
+                "IMAGENES": [
+                    "img_66db9275247646.60730618.jpg",
+                    "img_66db9275248cb0.13278003.png",
+                    "img_66db927524ad96.37193341.png"
+                ]
+            }
+        ],
+        "TALLAS": [
+            {
+                "ID_TALLA": "2",
+                "CANTIDAD": "1212"
+            }
+        ],
+        "ID": 29
+    },
+    {
+        "NOMBRE": "23423423",
+        "DESCRIPCION": "234234234",
+        "SKU": "234234234",
+        "PRECIO": "234234234234",
+        "DESCUENTO": "3",
+        "ID_CATEGORIA": "5",
+        "colores": [
+            {
+                "ID_COLOR": "4",
+                "IMAGENES": [
+                    "img_66db92a0af10b2.75608835.jpg",
+                    "img_66db92a0af2659.33809792.jpg"
+                ]
+            },
+            {
+                "ID_COLOR": "5",
+                "IMAGENES": [
+                    "img_66db92a37dd216.56356662.jpg",
+                    "img_66db92a37de703.47800410.jpg"
+                ]
+            }
+        ],
+        "TALLAS": [
+            {
+                "ID_TALLA": "1",
+                "CANTIDAD": "12"
+            },
+            {
+                "ID_TALLA": "5",
+                "CANTIDAD": "12"
+            },
+            {
+                "ID_TALLA": "4",
+                "CANTIDAD": "12"
+            }
+        ],
+        "ID": 30
+    },
+    {
+        "NOMBRE": "MONCADAS",
+        "DESCRIPCION": "LKSDUYGFJKSYDGF SFGSIDLFHS",
+        "SKU": "SJDFGY7",
+        "PRECIO": "23423243423",
+        "DESCUENTO": "32",
+        "ID_CATEGORIA": "1",
+        "colores": [
+            {
+                "ID_COLOR": "5",
+                "IMAGENES": [
+                    "img_66df2b759ef7c3.41574256.jpg",
+                    "img_66df2b759f1024.96228481.jpg"
+                ]
+            },
+            {
+                "ID_COLOR": "6",
+                "IMAGENES": [
+                    "img_66df2b7b8baf73.37100142.jpg",
+                    "img_66df2b7b8bc4d3.92300098.jpg"
+                ]
+            }
+        ],
+        "TALLAS": [
+            {
+                "ID_TALLA": "4",
+                "CANTIDAD": "213"
+            },
+            {
+                "ID_TALLA": "5",
+                "CANTIDAD": "213"
+            }
+        ],
+        "ID": 31
+    },
+    {
+        "NOMBRE": "ROLESX",
+        "DESCRIPCION": "LKSDUYGFJKSYDGF SFGSIDLFHS",
+        "SKU": "SJDFGY7",
+        "PRECIO": "213423424",
+        "DESCUENTO": "3",
+        "ID_CATEGORIA": "1",
+        "colores": [
+            {
+                "ID_COLOR": "4",
+                "IMAGENES": [
+                    "img_66df2d7e655cd4.11506438.jpg",
+                    "img_66df2d7e657368.24872450.png"
+                ]
+            },
+            {
+                "ID_COLOR": "5",
+                "IMAGENES": [
+                    "img_66df2d959cf259.99601296.png",
+                    "img_66df2d959d2c89.12294867.jpg"
+                ]
+            }
+        ],
+        "TALLAS": [],
+        "ID": 32
+    },
+    {
+        "NOMBRE": "ROLESX",
+        "DESCRIPCION": "234234",
+        "SKU": "24234",
+        "PRECIO": "234234",
+        "DESCUENTO": "2342",
+        "ID_CATEGORIA": "1",
+        "colores": [
+            {
+                "ID_COLOR": "4",
+                "IMAGENES": [
+                    "img_66df2e764efc93.71104406.png",
+                    "img_66df2e764f1280.02179106.JPG"
+                ],
+                "TALLAS": [
+                    {
+                        "ID_TALLA": "1",
+                        "CANTIDAD": "213"
+                    },
+                    {
+                        "ID_TALLA": "3",
+                        "CANTIDAD": "21"
+                    },
+                    {
+                        "ID_TALLA": "3",
+                        "CANTIDAD": "21"
+                    },
+                    {
+                        "ID_TALLA": "4",
+                        "CANTIDAD": "21"
+                    }
+                ]
+            },
+            {
+                "ID_COLOR": "5",
+                "IMAGENES": [
+                    "img_66df2f0d75dc37.94342372.jpg",
+                    "img_66df2f0d75f584.88690518.png"
+                ]
+            }
+        ],
+        "TALLAS": [],
+        "ID": 33
+    },
+    {
+        "NOMBRE": "ROLESX",
+        "DESCRIPCION": "23423423",
+        "SKU": "24",
+        "PRECIO": "234",
+        "DESCUENTO": "43",
+        "ID_CATEGORIA": "1",
+        "colores": [
+            {
+                "ID_COLOR": "4",
+                "IMAGENES": [
+                    "img_66df314e10eab4.96268988.JPG",
+                    "img_66df314e110048.65405540.JPG"
+                ],
+                "TALLAS": [
+                    {
+                        "ID_TALLA": "1",
+                        "CANTIDAD": "123"
+                    },
+                    {
+                        "ID_TALLA": "2",
+                        "CANTIDAD": "12"
+                    }
+                ]
+            },
+            {
+                "ID_COLOR": "5",
+                "IMAGENES": [
+                    "img_66df316a25c282.09337004.jpg",
+                    "img_66df316a25d7e3.68699571.jpg"
+                ],
+                "TALLAS": [
+                    {
+                        "ID_TALLA": "3",
+                        "CANTIDAD": "23"
+                    },
+                    {
+                        "ID_TALLA": "4",
+                        "CANTIDAD": "12"
+                    },
+                    {
+                        "ID_TALLA": "1",
+                        "CANTIDAD": "36"
+                    }
+                ]
+            }
+        ],
+        "ID": 35
+    },
+    {
+        "NOMBRE": "123123123",
+        "DESCRIPCION": "123123",
+        "SKU": "13123",
+        "PRECIO": "12312313",
+        "DESCUENTO": "222",
+        "ID_CATEGORIA": "1",
+        "colores": [
+            {
+                "ID_COLOR": "4",
+                "IMAGENES": [
+                    "img_66df440b6f9fe6.84084732.jpg",
+                    "img_66df440b6fb5f7.12629972.png"
+                ],
+                "TALLAS": [
+                    {
+                        "ID_TALLA": "1",
+                        "CANTIDAD": "12"
+                    },
+                    {
+                        "ID_TALLA": "2",
+                        "CANTIDAD": "10"
+                    }
+                ]
+            },
+            {
+                "ID_COLOR": "6",
+                "IMAGENES": [
+                    "img_66df4426adcb33.81873944.png",
+                    "img_66df4426ade370.63914607.png"
+                ],
+                "TALLAS": [
+                    {
+                        "ID_TALLA": "3",
+                        "CANTIDAD": "5"
+                    },
+                    {
+                        "ID_TALLA": "4",
+                        "CANTIDAD": "12"
+                    }
+                ]
+            }
+        ],
+        "ID": 36
+    },
+    {
+        "NOMBRE": "12312312",
+        "DESCRIPCION": "313123",
+        "SKU": "123132",
+        "PRECIO": "123123",
+        "DESCUENTO": "13",
+        "ID_CATEGORIA": "1",
+        "colores": [
+            {
+                "ID_COLOR": "6",
+                "IMAGENES": [
+                    "img_66df5c9b3339a5.87161838.jpg"
+                ],
+                "TALLAS": [
+                    {
+                        "ID_TALLA": "1",
+                        "CANTIDAD": "123"
+                    }
+                ]
+            }
+        ],
+        "ID": 37
+    },
+    {
+        "NOMBRE": "234234",
+        "DESCRIPCION": "234234",
+        "SKU": "234234",
+        "PRECIO": "234234",
+        "DESCUENTO": "234",
+        "ID_CATEGORIA": "5",
+        "colores": [
+            {
+                "ID_COLOR": "4",
+                "IMAGENES": [
+                    "img_66df65944bc4a1.35855615.jpg",
+                    "img_66df65944bdef9.06314425.JPG"
+                ],
+                "TALLAS": [
+                    {
+                        "ID_TALLA": "1",
+                        "CANTIDAD": "123"
+                    }
+                ]
+            }
+        ],
+        "ID": 38
+    },
+    {
+        "NOMBRE": "123123",
+        "DESCRIPCION": "123123",
+        "SKU": "123123",
+        "PRECIO": "123123",
+        "DESCUENTO": "123123",
+        "ID_CATEGORIA": "6",
+        "colores": [
+            {
+                "ID_COLOR": "4",
+                "IMAGENES": [
+                    "img_66df65fa7c53e0.42256814.jpg",
+                    "img_66df65fa7c6897.94716649.png",
+                    "img_66df65fa7c8049.62695955.png"
+                ],
+                "TALLAS": [
+                    {
+                        "ID_TALLA": "1",
+                        "CANTIDAD": "2134"
+                    },
+                    {
+                        "ID_TALLA": "2",
+                        "CANTIDAD": "2134"
+                    }
+                ]
+            },
+            {
+                "ID_COLOR": "5",
+                "IMAGENES": [
+                    "img_66df6606020312.56494760.jpg",
+                    "img_66df66060217e4.35176801.jpg"
+                ],
+                "TALLAS": [
+                    {
+                        "ID_TALLA": "3",
+                        "CANTIDAD": "2134"
+                    },
+                    {
+                        "ID_TALLA": "4",
+                        "CANTIDAD": "2134"
+                    }
+                ]
+            },
+            {
+                "ID_COLOR": "6",
+                "IMAGENES": [
+                    "img_66df66125b6c09.54301896.jpg"
+                ],
+                "TALLAS": [
+                    {
+                        "ID_TALLA": "5",
+                        "CANTIDAD": "10"
+                    }
+                ]
+            }
+        ],
+        "ID": 39
+    },
+    {
+        "NOMBRE": "ROLESX",
+        "DESCRIPCION": "2331123",
+        "SKU": "123123123",
+        "PRECIO": "123123",
+        "DESCUENTO": "22",
+        "ID_CATEGORIA": "5",
+        "colores": [
+            {
+                "ID_COLOR": "8",
+                "IMAGENES": [
+                    "img_66e0abe4b21692.50048226.jpg",
+                    "img_66e0abe4b22c39.26660379.jpg",
+                    "img_66e0abe4b23e40.25534860.jpg"
+                ],
+                "TALLAS": [
+                    {
+                        "ID_TALLA": "6",
+                        "CANTIDAD": "30"
+                    },
+                    {
+                        "ID_TALLA": "4",
+                        "CANTIDAD": "12"
+                    }
+                ]
+            },
+            {
+                "ID_COLOR": "6",
+                "IMAGENES": [
+                    "img_66e0ac0ed4a205.72609316.jpg",
+                    "img_66e0ac0ed4b9f8.10316241.jpg",
+                    "img_66e0ac0ed4cc20.34593986.jpg"
+                ],
+                "TALLAS": [
+                    {
+                        "ID_TALLA": "2",
+                        "CANTIDAD": "2"
+                    }
+                ]
+            }
+        ],
+        "ID": 40
+    },
+    {
+        "NOMBRE": "ROLESX",
+        "DESCRIPCION": "szdxsdfv",
+        "SKU": "324",
+        "PRECIO": "2342",
+        "DESCUENTO": "44",
+        "ID_CATEGORIA": "1",
+        "colores": [
+            {
+                "ID_COLOR": "4",
+                "IMAGENES": [
+                    "img_66eb2bba1fe186.84223844.jpg",
+                    "img_66eb2bba200653.06386731.jpg"
+                ],
+                "TALLAS": [
+                    {
+                        "ID_TALLA": "2",
+                        "CANTIDAD": "10"
+                    },
+                    {
+                        "ID_TALLA": "8",
+                        "CANTIDAD": "2"
+                    },
+                    {
+                        "ID_TALLA": "7",
+                        "CANTIDAD": "20"
+                    }
+                ]
+            },
+            {
+                "ID_COLOR": "11",
+                "IMAGENES": [
+                    "img_66eb2c30f156d7.93649884.JPG",
+                    "img_66eb2c30f17446.59494809.jpg"
+                ],
+                "TALLAS": [
+                    {
+                        "ID_TALLA": "4",
+                        "CANTIDAD": "20"
+                    }
+                ]
+            }
+        ],
+        "ID": 41
+    }
+]

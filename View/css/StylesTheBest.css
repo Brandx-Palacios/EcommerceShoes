@@ -1,0 +1,147 @@
+  /* Google Fonts(Poppins & Lato) */
+  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+  :root {
+      --poppins: "Poppins", sans-serif;
+      --lato: "Lato", sans-serif;
+
+      --light: #f9f9f9;
+      --blue: #3c91e6;
+      --light-blue: #cfe8ff;
+      --grey: #eee;
+      --dark-grey: #aaaaaa;
+      --dark: #342e37;
+      --red: #db504a;
+      --yellow: #ffce26;
+      --light-yellow: #fff2c6;
+      --orange: #fd7238;
+      --light-orange: #ffe0d3;
+  }
+
+  body {
+      font-family: var(--poppins);
+      margin: 0;
+      padding: 0;
+  }
+
+  .categories-section {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .form {
+      margin-bottom: 20px;
+      text-align: center;
+  }
+
+  .form label {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  .input-register {
+      font-family: var(--poppins);
+      padding: 10px;
+      width: 200px;
+  }
+
+  .foto {
+      margin-top: 10px;
+  }
+
+  .imgPreview {
+      max-width: 100%;
+      height: 100%;
+      margin-top: 10px;
+  }
+
+  .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+  .category-card {
+      font-family: var(--poppins);
+      color: var(--dark);
+      width: 450px;
+      margin: 10px;
+      margin-top: 50px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      overflow: hidden;
+      /* Evita que la imagen se desborde */
+  }
+
+  .category-title-container {
+    font-family: var(--poppins);
+    font-size: 12px;
+    background-color: #3498db;
+    color: #ffffff;
+    border-radius: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
+    max-width: max-content;
+    position: relative; /* Cambiar posición a relativa */
+    top: -190px; /* Ajustar según sea necesario */
+    right: -10px; /* Ajustar según sea necesario */
+}
+
+  .image-container {
+      position: relative;
+      height: 200px;
+     
+      /* Altura ideal para el encabezado de la carta */
+  }
+
+  .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Ajusta la imagen para cubrir completamente el contenedor */
+      transition: transform 0.3s ease-in-out;
+  }
+
+  .image-overlay {
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 5px;
+      box-sizing: border-box;
+  }
+
+  .button-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 6.8%;
+      background-color: #3498db;
+      /* Color de fondo para los botones */
+  }
+
+  .btn-eye {
+      padding: 5px 10px;
+      cursor: pointer;
+      border: none;
+      color: var(--light-blue);
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      transition: background 0.3s ease;
+  }
+
+  .btn-eye:hover {
+      color: black;
+  }
+
+  .category-card:hover {
+      transform: translateY(-5px);
+  }

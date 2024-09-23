@@ -1,0 +1,203 @@
+:root {
+    --poppins: "Poppins", sans-serif;
+    --lato: "Lato", sans-serif;
+  
+    --light: #f9f9f9;
+    --blue: #3c91e6;
+    --light-blue: #cfe8ff;
+    --grey: #eee;
+    --dark-grey: #aaaaaa;
+    --dark: #342e37;
+    --red: #db504a;
+    --yellow: #ffce26;
+    --light-yellow: #fff2c6;
+    --orange: #fd7238;
+    --light-orange: #ffe0d3;
+}
+
+body {
+    font-family: var(--poppins);
+    margin: 0;
+    padding: 0;
+}
+
+.categories-section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form {
+    font-family: var(--poppins);
+    width: 80%; /* Ajusta el ancho del formulario al 80% del contenedor padre */
+    max-width: 1000px; /* Máximo ancho del formulario */
+    margin: 0 auto; /* Centra el formulario en la página */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f1f1f1; /* Color de fondo del formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    overflow: hidden; /* Evita el desbordamiento de contenido interno */
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left; /* Alinea las etiquetas a la izquierda */
+}
+
+.input-register {
+    font-family: var(--poppins);
+    width: 100%; /* Ajusta el ancho del input al 100% del formulario */
+    padding: 10px;
+    border-radius: 10px;
+    border-style: hidden;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.btn-register-user {
+    background-color: #3498db;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    border-style: hidden;
+    cursor: pointer;
+    display: block;
+    width: 100%; /* Asegura que el botón se ajuste al 100% del formulario */
+    margin: 15px auto 0; /* Espaciado superior, centrado horizontal y sin margen inferior */
+    transition: background 1s ease;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.btn-register-user:hover {
+    background-color: #3795d4;
+    color: #ffff;
+}
+
+.foto {
+    margin-top: 10px;
+}
+
+.imgPreview {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Espacio entre tarjetas */
+    margin-top: 50px;
+}
+
+.category-card {
+    font-family: var(--poppins);
+    color: var(--dark);
+    width: calc(30% - 20px); /* Ajusta el ancho de la tarjeta */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Evita que la imagen se desborde */
+}
+
+.category-card p {
+    margin-bottom: 10px;
+}
+
+.category-title-container {
+    font-family: var(--poppins);
+    font-size: 12px;
+    background-color: #3498db;
+    color: #ffff;
+    border-radius: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin: 10px;
+    max-width: max-content;
+}
+
+.category-description {
+    max-height: 80px; /* Altura ideal para la descripción */
+    overflow-y: auto; /* Agrega scroll vertical si la descripción es más larga */
+    padding: 0 20px; /* Añade espacio al contenido para que no se corte por el scroll */
+    border-radius: 5px;
+    border-style: hidden;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    height: 150px; /* Altura ideal para el encabezado de la carta */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6.8%;
+    background-color: #3498db; /* Color de fondo para los botones */
+}
+
+.btn-eye,
+.btn-edit,
+.btn-delete {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    color: var(--light-blue);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    transition: background 0.3s ease;
+}
+
+.btn-eye:hover {
+    color: black;
+}
+
+.btn-edit:hover {
+    color: orange;
+}
+
+.btn-delete:hover {
+    color: red;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Consultas de medios para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Cambia a una sola columna */
+        align-items: center; /* Centra las tarjetas */
+    }
+
+    .category-card {
+        width: 90%; /* Ajusta el ancho de las tarjetas en pantallas pequeñas */
+        margin: 10px 0; /* Espaciado superior e inferior para las tarjetas */
+    }
+}

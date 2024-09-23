@@ -1,0 +1,295 @@
+  /* Google Fonts(Poppins & Lato) */
+  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.3s linear;
+  }
+
+  :root {
+    --poppins: "Poppins", sans-serif;
+    --lato: "Lato", sans-serif;
+
+    --light: #f9f9f9;
+    --blue: #3c91e6;
+    --light-blue: #cfe8ff;
+    --grey: #eee;
+    --dark-grey: #aaaaaa;
+    --dark: #342e37;
+    --red: #db504a;
+    --yellow: #ffce26;
+    --light-yellow: #fff2c6;
+    --orange: #3c91e6;
+    --light-orange: #ffe0d3;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    background: var(--grey);
+    overflow-x: hidden;
+  }
+
+  body.dark {
+    --light: #0c0c1e;
+    --grey: #060714;
+    --dark: #fbfbfb;
+  }
+
+  .content main {
+    width: 100%;
+    padding: 36px 24px;
+    font-family: var(--poppins);
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+  }
+
+  .content main .head-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .content main .head-title .left h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--dark);
+  }
+
+  .content main .head-title .left .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .content main .head-title .left .breadcrumb i {
+    color: var(--dark);
+  }
+
+  .content main .head-title .left .breadcrumb li a {
+    color: var(--dark-grey);
+    pointer-events: none;
+  }
+
+  .content main .head-title .left .breadcrumb li a.active {
+    color: var(--blue);
+    pointer-events: unset;
+  }
+
+  .content main .table-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 24px;
+    width: 100%;
+    color: var(--dark);
+  }
+
+  .content main .table-data>div {
+    border-radius: 20px;
+    background: var(--light);
+    padding: 24px;
+    overflow-x: auto;
+  }
+
+  .content main .table-data .head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .content main .table-data .head h3 {
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .content main .table-data .order {
+    flex-grow: 0.5;
+    flex-basis: 500px;
+  }
+
+  /* Estilos para el botón de editar */
+  .edit-button {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: auto 100%;
+    display: block;
+    /* Cambiado a block */
+    margin: 15px auto;
+    /* Centra el botón vertical y horizontalmente */
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .edit-button:hover {
+    background-color: #227cb8;
+  }
+
+  .list-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    /* Ajusta el ancho del contenedor según sea necesario */
+    margin: auto;
+    /* Centra el contenedor horizontalmente */
+  }
+
+  .column {
+    flex: 1;
+    padding: 25px;
+    width: 100%;
+  }
+
+  .content main .todo {
+    flex-grow: 1;
+    flex-basis: 400px;
+  }
+
+  .content main .todo .todo-list li {
+    width: 100%;
+    margin-bottom: 16px;
+    background: var(--grey);
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content main .todo .todo-list {
+    width: 100%;
+    display: block;
+  }
+  
+  .content main .todo .todo-list li p {
+    word-wrap: break-word; /* Permite que el texto se ajuste al contenedor sin dividir palabras */
+    max-width: 100%; /* Asegura que el párrafo no exceda el tamaño del contenedor */
+  }
+
+  .content main .todo .todo-list li input[type="text"] {
+    width: 100%; /* Establece el ancho del input al 40% del espacio disponible */
+    margin-left: 5px; /* Añade un margen a la izquierda para separar el input del texto del label */
+  }
+  
+
+  .content main .todo .todo-list li.not-completed {
+    border-left: 10px solid var(--orange);
+    display: inline-flexbox
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #d9d9d9;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 5rem;
+  }
+
+  @media (max-width: 576px) {
+    .content nav form .form-input input {
+      display: none;
+    }
+
+    .content nav form .form-input button {
+      width: auto;
+      height: auto;
+      background: transparent;
+      border-radius: none;
+      color: var(--dark);
+    }
+
+    .content nav form.show .form-input input {
+      display: block;
+      width: 100%;
+    }
+
+    .content nav form.show .form-input button {
+      width: 36px;
+      height: 36px;
+      border-radius: 0 36px 36px 0;
+      color: var(--light);
+      background: var(--red);
+    }
+
+    .content nav form.show~.notification,
+    .content nav form.show~.profile {
+      display: none;
+    }
+
+    .content main .table-data .head,
+    .content main .table-data .order table,
+    .content main .table-data .todo .todo-list {
+      min-width: 100%;
+      /* Ajusta el ancho mínimo para ocupar todo el contenedor */
+    }
+
+    .list-container {
+      flex-direction: column;
+      /* Cambia la dirección del flujo a vertical */
+      align-items: stretch;
+      /* Ajusta los elementos a lo largo del eje transversal */
+    }
+
+    .column {
+      flex: 1 1 100%;
+      /* Ocupa todo el ancho del contenedor */
+      padding: 0;
+      /* Elimina el relleno para utilizar el espacio disponible */
+      margin-bottom: 20px;
+      /* Añade un margen inferior para separar los contenedores */
+    }
+
+    .content main .todo .todo-list li {
+      width: 100%;
+      /* Ajusta el ancho al 100% para ocupar el contenedor */
+      display: flex;
+      /* Cambia a flexbox para que los elementos internos se ajusten correctamente */
+      justify-content: space-between;
+      /* Distribuye uniformemente el espacio entre los elementos */
+      align-items: center;
+      /* Alinea los elementos verticalmente */
+    }
+
+    .content main .todo .todo-list li p {
+      flex: 1;
+      /* Ocupa todo el espacio disponible */
+      padding: 10px 14px;
+      /* Añade relleno a los párrafos para separar el texto del borde */
+      margin: 0;
+      /* Elimina cualquier margen para un diseño más limpio */
+    }
+
+    .content main .todo .todo-list li select {
+      width: 100%;
+    }
+
+    .content main .todo .todo-list li input[type="file"] {
+      width: 100%;
+    }
+
+    .btn-register-user {
+      width: calc(100% - 28px);
+      /* Ajusta el ancho de los botones */
+    }
+  }

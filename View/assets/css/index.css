@@ -1,0 +1,54 @@
+/* Estilo para las imágenes dentro del swiper */
+.swiper-slide img {
+    max-width: 100%; /* Ajustar el ancho máximo */
+    height: 200px; /* Establecer una altura fija */
+    object-fit: cover; /* Mantener la relación de aspecto y recortar según sea necesario */
+}
+
+/* Estilo para las imágenes dentro del zoom */
+.lightgallery-item img {
+    max-width: 100%; /* Ajustar el ancho máximo */
+    max-height: 100vh; /* Establecer una altura máxima para el zoom */
+    object-fit: contain; /* Ajustar la imagen dentro del contenedor */
+}
+
+/* Estilo para las imágenes dentro del swiper latest */
+.swiper-slide #swiper-latest-image {
+    width: 345px;
+    height: 345px;
+    object-fit: cover;
+}
+
+.cart-icon-container {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff8a8a;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 5px;
+}
+
+#btn-addCar {
+    margin-bottom: 10px;
+}
+
+#btn-addCar {
+    color: green;
+    margin-bottom: 10px;
+}
+
+#btn-pay {
+    color: #111827;
+}
+
+#btn-pay:hover {
+    color: green;
+}

@@ -1,0 +1,62 @@
+.container .img_container {
+    width: 450px;
+    height: 450px;
+    margin-bottom: 20px;    
+}
+
+.container .img_container .main_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+    object-fit: cover;
+}
+
+.container .thumbnail_container {
+    height: 80px;
+    overflow-x: auto; /* Habilita el desplazamiento horizontal */
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    scroll-snap-type: x mandatory; /* Configura el tipo de desplazamiento horizontal */
+}
+
+.container .thumbnail_container .slick-prev,
+.container .thumbnail_container .slick-next {
+    font-size: 24px; /* Ajusta el tamaño de las flechas de navegación */
+    color: #000; /* Color de las flechas de navegación */
+    align-items: center;
+}
+
+.container .thumbnail_container .thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: 0.3s;
+    scroll-snap-align: start; /* Alinea cada miniatura al inicio del contenedor */
+}
+
+.container .thumbnail_container .thumbnail:hover,
+.container .thumbnail_container .thumbnail.active {
+    opacity: 1;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+}
+
+.container .thumbnail_container::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento */
+}
+
+@media (max-width: 576px) {
+
+    .content main .table-data>div {
+        overflow-x: hidden;
+    }
+
+    .container .img_container {
+        width: auto;
+        height: 300px;
+    }
+}

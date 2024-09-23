@@ -1,0 +1,13 @@
+/*
+<?php
+require 'View/Layout/Footer.php';
+?>
+*/
+
+#text-id {
+    justify-content: center;
+}
+
+#footer-logo {
+    color: rgb(122, 122, 122);
+}

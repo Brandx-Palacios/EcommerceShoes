@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --poppins: "Poppins", sans-serif;
+  --lato: "Lato", sans-serif;
+
+  --light: #f9f9f9;
+  --blue: #3c91e6;
+  --light-blue: #cfe8ff;
+  --grey: #eee;
+  --dark-grey: #aaaaaa;
+  --dark: #342e37;
+  --red: #db504a;
+  --yellow: #ffce26;
+  --light-yellow: #fff2c6;
+  --orange: #fd7238;
+  --light-orange: #ffe0d3;
+}
+
+.content main #productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 36px;
+}
+
+#productos-container .tarjeta .no-images {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 97.7px;
+}
+
+#productos-container .tarjeta .dynamic-image {
+  cursor: pointer;
+  width: 100%;
+  height: 300px;
+  /* Establece la altura deseada para las imágenes */
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+#productos-container .tarjeta {
+  width: 260px;
+  background: var(--light);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  /* Evitar que la imagen se desborde */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+}
+
+#productos-container .tarjeta:hover {
+  transform: translateY(-10px);
+}
+
+#productos-container .tarjeta .product-image {
+  width: 100%;
+  height: 300px;
+  /* Establece la altura deseada para las imágenes */
+  display: none;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+#productos-container .tarjeta .text {
+  color: var(--dark);
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--poppins);
+  font-size: larger;
+}
+
+#productos-container .tarjeta .text .product-category-container {
+  width: auto;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 2px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  background-color: rgb(0, 174, 255);
+}
+
+#productos-container .tarjeta .text p.product-category {
+  padding: 2px;
+  color: white;
+  font-family: var(--poppins);
+}
+
+#productos-container .tarjeta .text p.initial-inventory {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#productos-container .tarjeta .text p.product-details {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+#productos-container .tarjeta .text p.product-name {
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+#productos-container .tarjeta .button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6.8%;
+}
+
+#productos-container .tarjeta .button-container .btn-eye,
+#productos-container .tarjeta .button-container .btn-edit,
+#productos-container .tarjeta .button-container .btn-delete {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  color: var(--dark);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+#productos-container .tarjeta .button-container .btn-eye:hover {
+  color: rgb(30, 255, 0);
+}
+
+#productos-container .tarjeta .button-container .btn-edit:hover {
+  color: orange;
+}
+
+#productos-container .tarjeta .button-container .btn-delete:hover {
+  color: red;
+}
+
+.search-and-excel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Centra horizontalmente los elementos */
+  margin: 10px;
+}
+
+.input-search {
+  width: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  /* Puedes ajustar esto si deseas más espacio entre el campo de búsqueda y el botón */
+  border: 1px solid var(--dark-grey);
+  border-radius: 10px;
+  font-family: var(--poppins);
+  border-style: hidden;
+}
+
+.btn-eye {
+  font-family: var(--poppins);
+  padding: 10px;
+  border-radius: 8px;
+  border: hidden;
+  background-color: rgb(81, 190, 81);
+  color: var(--light);
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btn-eye i {
+  margin-right: 5px;
+  /* Espaciado entre el ícono y el texto (ajustable) */
+}
+
+.btn-eye:hover {
+  color: white;
+  background-color: green;
+  /* Cambia el color al pasar el mouse */
+}

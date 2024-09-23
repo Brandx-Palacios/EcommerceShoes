@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2.review-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.review-container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding-left: 72px;
+    padding-right: 72px;
+    min-height: calc(100vh - 160px); /* Ajusta el alto del contenido según sea necesario */
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-register-review {
+    grid-column: span 2;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-register-review:hover {
+    background-color: #208d26;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.review-card {
+    width: calc(30% - 20px);
+    max-width: 800px; /* Ajusta según sea necesario */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    max-height: 300px; /* Ajusta según sea necesario */
+    transition: background 0.1s ease;
+}
+
+.review-card:hover {
+    background-color: #f1f1f1;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.comment {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    max-height: 100px; /* Ajusta según sea necesario */
+    overflow-y: auto; /* Ajusta según sea necesario */
+}
+
+.name {
+    font-family: cursive;
+    font-size: small;
+    margin: 5px 0;
+    color: #ccc;
+}
+
+@media (max-width: 800px) {
+    .review-card {
+        width: calc(100% - 20px);
+    }
+}

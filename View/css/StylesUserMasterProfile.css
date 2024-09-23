@@ -1,0 +1,564 @@
+  /* Google Fonts(Poppins & Lato) */
+  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.3s linear;
+  }
+
+  :root {
+    --poppins: "Poppins", sans-serif;
+    --lato: "Lato", sans-serif;
+
+    --light: #f9f9f9;
+    --blue: #3c91e6;
+    --light-blue: #cfe8ff;
+    --grey: #eee;
+    --dark-grey: #aaaaaa;
+    --dark: #342e37;
+    --red: #db504a;
+    --yellow: #ffce26;
+    --light-yellow: #fff2c6;
+    --orange: #3c91e6;
+    --light-orange: #ffe0d3;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    background: var(--grey);
+    overflow-x: hidden;
+  }
+
+  body.dark {
+    --light: #0c0c1e;
+    --grey: #060714;
+    --dark: #fbfbfb;
+  }
+
+  .content main {
+    width: 100%;
+    padding: 36px 24px;
+    font-family: var(--poppins);
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+  }
+
+  .content main .head-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .content main .head-title .left h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--dark);
+  }
+
+  .content main .head-title .left .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .content main .head-title .left .breadcrumb i {
+    color: var(--dark);
+  }
+
+  .content main .head-title .left .breadcrumb li a {
+    color: var(--dark-grey);
+    pointer-events: none;
+  }
+
+  .content main .head-title .left .breadcrumb li a.active {
+    color: var(--blue);
+    pointer-events: unset;
+  }
+
+  .content main .table-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 24px;
+    width: 100%;
+    color: var(--dark);
+  }
+
+  .content main .table-data>div {
+    border-radius: 20px;
+    background: var(--light);
+    padding: 24px;
+    overflow-x: auto;
+  }
+
+  .content main .table-data .head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .content main .table-data .head h3 {
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .content main .table-data .order {
+    flex-grow: 0.5;
+    flex-basis: 500px;
+  }
+
+  /* Estilos para el botón de editar */
+  .edit-button {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: auto 100%;
+    display: block;
+    /* Cambiado a block */
+    margin: 15px auto;
+    /* Centra el botón vertical y horizontalmente */
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .edit-button:hover {
+    background-color: #227cb8;
+  }
+
+  .list-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    /* Ajusta el ancho del contenedor según sea necesario */
+    margin: auto;
+    /* Centra el contenedor horizontalmente */
+  }
+
+  .column {
+    flex: 1;
+    padding: 25px;
+    width: 100%;
+  }
+
+  .content main .todo {
+    flex-grow: 1;
+    flex-basis: 400px;
+  }
+
+  /* Google Fonts(Poppins & Lato) */
+  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.3s linear;
+  }
+
+  :root {
+    --poppins: "Poppins", sans-serif;
+    --lato: "Lato", sans-serif;
+
+    --light: #f9f9f9;
+    --blue: #3c91e6;
+    --light-blue: #cfe8ff;
+    --grey: #eee;
+    --dark-grey: #aaaaaa;
+    --dark: #342e37;
+    --red: #db504a;
+    --yellow: #ffce26;
+    --light-yellow: #fff2c6;
+    --orange: #3c91e6;
+    --light-orange: #ffe0d3;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    background: var(--grey);
+    overflow-x: hidden;
+  }
+
+  body.dark {
+    --light: #0c0c1e;
+    --grey: #060714;
+    --dark: #fbfbfb;
+  }
+
+  .content main {
+    width: 100%;
+    padding: 36px 24px;
+    font-family: var(--poppins);
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+  }
+
+  .content main .head-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .content main .head-title .left h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--dark);
+  }
+
+  .content main .head-title .left .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .content main .head-title .left .breadcrumb i {
+    color: var(--dark);
+  }
+
+  .content main .head-title .left .breadcrumb li a {
+    color: var(--dark-grey);
+    pointer-events: none;
+  }
+
+  .content main .head-title .left .breadcrumb li a.active {
+    color: var(--blue);
+    pointer-events: unset;
+  }
+
+  .content main .table-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 24px;
+    width: 100%;
+    color: var(--dark);
+  }
+
+  .content main .table-data>div {
+    border-radius: 20px;
+    background: var(--light);
+    padding: 24px;
+    overflow-x: auto;
+  }
+
+  .content main .table-data .head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .content main .table-data .head h3 {
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .content main .table-data .order {
+    flex-grow: 0.5;
+    flex-basis: 500px;
+  }
+
+  /* Estilos para el botón de editar */
+  .edit-button {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: auto 100%;
+    display: block;
+    /* Cambiado a block */
+    margin: 15px auto;
+    /* Centra el botón vertical y horizontalmente */
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .edit-button:hover {
+    background-color: #227cb8;
+  }
+
+  .list-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    /* Ajusta el ancho del contenedor según sea necesario */
+    margin: auto;
+    /* Centra el contenedor horizontalmente */
+  }
+
+  .column {
+    flex: 1;
+    padding: 25px;
+    width: 100%;
+  }
+
+  .content main .todo {
+    flex-grow: 1;
+    flex-basis: 400px;
+  }
+
+  .content main .todo .todo-list li {
+    width: 100%;
+    margin-bottom: 16px;
+    background: var(--grey);
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content main .todo .todo-list {
+    width: 100%;
+    display: block;
+  }
+  
+  .content main .todo .todo-list li p {
+    word-wrap: break-word; /* Permite que el texto se ajuste al contenedor sin dividir palabras */
+    max-width: 100%; /* Asegura que el párrafo no exceda el tamaño del contenedor */
+  }
+
+  .content main .todo .todo-list li.not-completed {
+    border-left: 10px solid var(--orange);
+    display: inline-flexbox
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #d9d9d9;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 5rem;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+
+    .content {
+      width: calc(100% - 200px);
+      left: 200px;
+    }
+
+    .content nav .nav-link {
+      display: none;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .content nav form .form-input input {
+      display: none;
+    }
+
+    .content nav form .form-input button {
+      width: auto;
+      height: auto;
+      background: transparent;
+      border-radius: none;
+      color: var(--dark);
+    }
+
+    .content nav form.show .form-input input {
+      display: block;
+      width: 100%;
+    }
+
+    .content nav form.show .form-input button {
+      width: 36px;
+      height: 36px;
+      border-radius: 0 36px 36px 0;
+      color: var(--light);
+      background: var(--red);
+    }
+
+    .content nav form.show~.notification,
+    .content nav form.show~.profile {
+      display: none;
+    }
+
+    .content main .table-data .head {
+      min-width: 420px;
+    }
+
+    .content main .table-data .order table {
+      min-width: 420px;
+    }
+
+    .content main .todo .list-container {
+      flex-direction: column;
+    }
+
+    .table-data .order {
+      overflow-x: hidden;
+      /* Oculta el desplazamiento horizontal */
+    }
+
+    .table-data .order .head {
+      min-width: unset;
+      /* Elimina el ancho mínimo establecido */
+    }
+
+    .table-data .order table {
+      min-width: unset;
+      /* Elimina el ancho mínimo establecido */
+    }
+
+    .table-data .order img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .content main .table-data>div {
+      overflow-x: hidden;
+    }
+  }
+
+  .content main .todo .todo-list li {
+    width: 100%;
+    margin-bottom: 16px;
+    background: var(--grey);
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content main .todo .todo-list {
+    width: 100%;
+    display: block;
+  }
+
+  .content main .todo .todo-list li.not-completed {
+    border-left: 10px solid var(--orange);
+    display: inline-flexbox
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #d9d9d9;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 5rem;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+
+    .content {
+      width: calc(100% - 200px);
+      left: 200px;
+    }
+
+    .content nav .nav-link {
+      display: none;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .content nav form .form-input input {
+      display: none;
+    }
+
+    .content nav form .form-input button {
+      width: auto;
+      height: auto;
+      background: transparent;
+      border-radius: none;
+      color: var(--dark);
+    }
+
+    .content nav form.show .form-input input {
+      display: block;
+      width: 100%;
+    }
+
+    .content nav form.show .form-input button {
+      width: 36px;
+      height: 36px;
+      border-radius: 0 36px 36px 0;
+      color: var(--light);
+      background: var(--red);
+    }
+
+    .content nav form.show~.notification,
+    .content nav form.show~.profile {
+      display: none;
+    }
+
+    .content main .table-data .head {
+      min-width: 420px;
+    }
+
+    .content main .table-data .order table {
+      min-width: 420px;
+    }
+
+    .content main .todo .list-container {
+      flex-direction: column;
+    }
+
+    .table-data .order {
+      overflow-x: hidden;
+      /* Oculta el desplazamiento horizontal */
+    }
+
+    .table-data .order .head {
+      min-width: unset;
+      /* Elimina el ancho mínimo establecido */
+    }
+
+    .table-data .order table {
+      min-width: unset;
+      /* Elimina el ancho mínimo establecido */
+    }
+
+    .table-data .order img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .content main .table-data>div {
+      overflow-x: hidden;
+    }
+  }
