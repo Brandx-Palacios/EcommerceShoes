@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+	<title>Pullshoes</title>
+
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/viewProducts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="icon" href="images/fevicon.png" type="image/gif" />
+
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+		media="screen">
+</head>
+
+<!-- body -->
+
+<body class="main-layout">
+
+	<!-- header section start -->
+	<div class="header_section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="logo"><a href="#"><img src="images/logo.png"></a></div>
+				</div>
+				<div class="col-sm-9">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<button class="navbar-toggler" type="button" data-toggle="collapse"
+							data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+							<div class="navbar-nav">
+								<a class="nav-item nav-link" href="index.html">Home</a>
+								<a class="nav-item nav-link" href="collection.html">Collection</a>
+								<a class="nav-item nav-link" href="shoes.html">Shoes</a>
+								<a class="nav-item nav-link" href="racing boots.html">Racing Boots</a>
+								<a class="nav-item nav-link last" href="#"><img src="images/search_icon.png"></a
+									src="images/shop_icon.png"></a>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- header section end -->
+	 
+	<br>
+
+	<div class="containerContainer">
+		<div class="product-info">
+			<h2>Producto Especial</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id urna vel libero aliquet vulputate.</p>
+			<div class="rating">
+				⭐⭐⭐⭐☆
+			</div>
+			<div class="quantity">
+				<button onclick="decrement()">-</button>
+				<input type="text" id="quantity" value="1" readonly>
+				<button onclick="increment()">+</button>
+			</div>
+			<div class="size">
+				<strong>Talla:</strong>
+				<span>S</span>
+				<span>M</span>
+				<span>L</span>
+			</div>
+			<div class="color">
+				<strong>Colores:</strong>
+				<span style="background-color: #ff0000;"></span>
+				<span style="background-color: #00ff00;"></span>
+				<span style="background-color: #0000ff;"></span>
+			</div>
+		</div>
+		<div class="container_carousel">
+			<div class="carousel">
+				<input type="radio" id="carousel-1" name="carousel[]" checked>
+				<input type="radio" id="carousel-2" name="carousel[]">
+				<input type="radio" id="carousel-3" name="carousel[]">
+				<input type="radio" id="carousel-4" name="carousel[]">
+				<input type="radio" id="carousel-5" name="carousel[]">
+				<ul class="carousel__items">
+					<li class="carousel__item"><img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt=""></li>
+					<li class="carousel__item"><img src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg" alt=""></li>
+					<li class="carousel__item"><img src="//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg" alt=""></li>
+					<li class="carousel__item"><img src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg" alt=""></li>
+					<li class="carousel__item"><img src="//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg" alt=""></li>
+				</ul>
+				<div class="carousel__prev">
+					<label for="carousel-1">‹</label>
+					<label for="carousel-2">‹</label>
+					<label for="carousel-3">‹</label>
+					<label for="carousel-4">‹</label>
+					<label for="carousel-5">‹</label>
+				</div>
+				<div class="carousel__next">
+					<label for="carousel-1">›</label>
+					<label for="carousel-2">›</label>
+					<label for="carousel-3">›</label>
+					<label for="carousel-4">›</label>
+					<label for="carousel-5">›</label>
+				</div>
+				<div class="carousel__nav">
+					<label for="carousel-1"></label>
+					<label for="carousel-2"></label>
+					<label for="carousel-3"></label>
+					<label for="carousel-4"></label>
+					<label for="carousel-5"></label>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+	<section class="game-section">
+		<h2 class="line-title">More Products</h2>
+		<div class="owl-carousel custom-carousel owl-theme">
+			<div class="item active"
+				style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg);">
+				<div class="item-desc">
+					<h3>Dota 2</h3>
+					<p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+						Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+				</div>
+			</div>
+			<div class="item"
+				style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg);">
+				<div class="item-desc">
+					<h3>The Witcher 3</h3>
+					<p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense
+						of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.
+					</p>
+				</div>
+			</div>
+			<div class="item"
+				style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/rdr-2.jpg);">
+				<div class="item-desc">
+					<h3>RDR 2</h3>
+					<p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+						Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+				</div>
+			</div>
+			<div class="item"
+				style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/pubg.jpg);">
+				<div class="item-desc">
+					<h3>PUBG Mobile</h3>
+					<p>PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+						Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+				</div>
+			</div>
+			<div class="item"
+				style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/fortnite.jpg);">
+				<div class="item-desc">
+					<h3>Fortnite</h3>
+					<p>Battle royale where 100 players fight to be the last person standing. which was a
+						community-created mod
+						for Blizzard Entertainment's Warcraft III.</p>
+				</div>
+			</div>
+			<div class="item"
+				style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg);">
+				<div class="item-desc">
+					<h3>Far Cry 5</h3>
+					<p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
+						which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<!-- section footer start -->
+	<div class="section_footer">
+		<div class="container">
+			<div class="mail_section">
+				<div class="row">
+					<div class="col-sm-6 col-lg-2">
+						<div><a href="#"><img src="images/footer-logo.png"></a></div>
+					</div>
+					<div class="col-sm-6 col-lg-2">
+						<div class="footer-logo"><img src="images/phone-icon.png"><span class="map_text">(71)
+								1234567890</span></div>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<div class="footer-logo"><img src="images/email-icon.png"><span
+								class="map_text">Demo@gmail.com</span></div>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<div class="social_icon">
+							<ul>
+								<li><a href="#"><img src="images/fb-icon.png"></a></li>
+								<li><a href="#"><img src="images/twitter-icon.png"></a></li>
+								<li><a href="#"><img src="images/in-icon.png"></a></li>
+								<li><a href="#"><img src="images/google-icon.png"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+			<div class="footer_section_2">
+				<div class="row">
+					<div class="col-sm-4 col-lg-2">
+						<p class="dummy_text"> ipsum dolor sit amet, consectetur ipsum dolor sit amet, consectetur
+							ipsum
+							dolor sit amet,</p>
+					</div>
+					<div class="col-sm-4 col-lg-2">
+						<h2 class="shop_text">Address </h2>
+						<div class="image-icon"><img src="images/map-icon.png"><span class="pet_text">No 40 Baria
+								Sreet 15/2 NewYork City, NY, United States.</span></div>
+					</div>
+					<div class="col-sm-4 col-md-6 col-lg-3">
+						<h2 class="shop_text">Our Company </h2>
+						<div class="delivery_text">
+							<ul>
+								<li>Delivery</li>
+								<li>Legal Notice</li>
+								<li>About us</li>
+								<li>Secure payment</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<h2 class="adderess_text">Products</h2>
+						<div class="delivery_text">
+							<ul>
+								<li>Prices drop</li>
+								<li>New products</li>
+								<li>Best sales</li>
+								<li>Sitemap</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-2">
+						<h2 class="adderess_text">Newsletter</h2>
+						<div class="form-group">
+							<input type="text" class="enter_email" placeholder="Enter Your email" name="Name">
+						</div>
+						<button class="subscribr_bt">Subscribe</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- section footer end -->
+	<div class="copyright">2024 - All Rights Reserved. <a href="#"></a></div>
+
+
+	<!-- Javascript files-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script src="js/plugin.js"></script>
+	<!-- sidebar -->
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="js/custom.js"></script>
+	<!-- javascript -->
+	<script src="js/owl.carousel.js"></script>
+	<script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+	<script>
+
+		/* script 2 del 1.1*/
+
+		$(".custom-carousel").owlCarousel({
+			autoWidth: true,
+			loop: true
+		});
+		$(document).ready(function () {
+			$(".custom-carousel .item").click(function () {
+				$(".custom-carousel .item").not($(this)).removeClass("active");
+				$(this).toggleClass("active");
+			});
+		});
+
+	</script>
+</body>
+
+</html>

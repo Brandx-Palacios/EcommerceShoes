@@ -1,0 +1,654 @@
+/* carrusel 1.1 start */
+
+@charset "utf-8";
+
+/******* Fonts Import Start **********/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.clear {
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    border: 0px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+a:focus,
+a:active,
+a:visited,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #e73700;
+}
+
+h2 {
+    margin-bottom: 48px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    position: relative;
+    text-transform: capitalize;
+}
+
+h3 {
+    margin: 0 0 10px;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+button {
+    outline: none !important;
+}
+
+/******* Common Element CSS End *********/
+
+/* -------- title style ------- */
+.line-title {
+    position: relative;
+    width: 400px;
+}
+
+.line-title::before,
+.line-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.line-title::before {
+    width: 100%;
+    background: #f2f2f2;
+}
+
+.line-title::after {
+    width: 32px;
+    background: #e73700;
+}
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+.game-section {
+    padding: 60px 50px;
+}
+
+.game-section .owl-stage {
+    margin: 15px 0;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.game-section .item {
+    margin: 0 15px 60px;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    background: #343434 no-repeat center center / cover;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.game-section .item.active {
+    width: 500px;
+    box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+
+.game-section .item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.game-section .item-desc {
+    padding: 0 24px 12px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transform: translateY(calc(100% - 54px));
+    -webkit-transform: translateY(calc(100% - 54px));
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.game-section .item.active .item-desc {
+    transform: none;
+    -webkit-transform: none;
+}
+
+.game-section .item-desc p {
+    opacity: 0;
+    -webkit-transform: translateY(32px);
+    transform: translateY(32px);
+    transition: all 0.4s ease-in-out 0.2s;
+    -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+
+.game-section .item.active .item-desc p {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.game-section .owl-theme.custom-carousel .owl-dots {
+    margin-top: -20px;
+    position: relative;
+    z-index: 5;
+}
+
+/******** Middle section CSS End *******/
+
+/***** responsive css Start ******/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    h3 {
+        margin: 0 0 8px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    /* -------- Landing page ------- */
+    .game-section {
+        padding: 50px 30px;
+    }
+
+    .game-section .item {
+        margin: 0 12px 60px;
+        width: 260px;
+        height: 360px;
+    }
+
+    .game-section .item.active {
+        width: 400px;
+    }
+
+    .game-section .item-desc {
+        transform: translateY(calc(100% - 46px));
+        -webkit-transform: translateY(calc(100% - 46px));
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    h3 {
+        margin: 0 0 8px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .line-title {
+        width: 330px;
+    }
+
+    /* -------- Landing page ------- */
+    .game-section {
+        padding: 50px 30px 40px;
+    }
+
+    .game-section .item {
+        margin: 0 12px 60px;
+        width: 240px;
+        height: 330px;
+    }
+
+    .game-section .item.active {
+        width: 360px;
+    }
+
+    .game-section .item-desc {
+        transform: translateY(calc(100% - 42px));
+        -webkit-transform: translateY(calc(100% - 42px));
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        margin: 0 0 8px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .line-title {
+        width: 250px;
+    }
+
+    /* -------- Landing page ------- */
+    .game-section {
+        padding: 30px 15px 20px;
+    }
+
+    .game-section .item {
+        margin: 0 10px 40px;
+        width: 200px;
+        height: 280px;
+    }
+
+    .game-section .item.active {
+        width: 270px;
+        box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .game-section .item-desc {
+        padding: 0 14px 5px;
+        transform: translateY(calc(100% - 42px));
+        -webkit-transform: translateY(calc(100% - 42px));
+    }
+}
+
+/* carrusel 1.1 end */
+
+/* carrusel product start */
+
+.carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel > input[type="radio"] {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 0;
+}
+
+.carousel > input[type="radio"]:checked ~ .carousel__items .carousel__item,
+.carousel > input[type="radio"]:checked ~ .carousel__prev > label,
+.carousel > input[type="radio"]:checked ~ .carousel__next > label {
+    opacity: 0;
+}
+
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(1),
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(5),
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2),
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(2),
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1),
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3),
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(3),
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2),
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4),
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(4),
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3),
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5),
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(5),
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4),
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(1) {
+    opacity: 1;
+}
+
+.carousel__items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.carousel__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+}
+
+.carousel__item img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.carousel__prev,
+.carousel__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    opacity: 0;
+    z-index: 2;
+}
+
+.carousel__prev > label,
+.carousel__next > label {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.carousel__prev > label:hover,
+.carousel__prev > label:focus,
+.carousel__next > label:hover,
+.carousel__next > label:focus {
+    opacity: 0.5 !important;
+}
+
+.carousel__prev > label:before,
+.carousel__prev > label:after,
+.carousel__next > label:before,
+.carousel__next > label:after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.carousel__prev > label:before {
+    background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%),
+        linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 35%;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.carousel__next > label:before {
+    background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%),
+        linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 10%;
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+}
+
+.carousel__prev {
+    left: 2%;
+}
+
+.carousel__next {
+    right: 2%;
+}
+
+.carousel__nav {
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 3;
+}
+
+.carousel__nav > label {
+    border: 1px solid #fff;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0.125%;
+    width: 20px;
+    height: 20px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}   
+
+.container_carousel {
+    width: 900px;
+    min-width: 900px;
+    margin: 50px auto;
+    margin-top: 110px;
+}
+
+/***********/
+
+/* Contenedor principal de dos columnas */
+.containerContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Ajustes para el carrusel */
+.container_carousel {
+    flex: 1;
+    margin: 20px;
+    min-width: 500px; /* Ajusta el ancho mínimo según sea necesario */
+    position: relative; /* Asegura que los elementos posicionados dentro sean relativos al contenedor */
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Estilo para los items del carrusel */
+.carousel__items {
+    display: flex;
+    transition: transform 0.5s ease;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel__item {
+    flex: 1;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel__item img {
+    width: 100%;
+    display: block;
+}
+
+/* Controles de navegación prev/next */
+.carousel__prev, .carousel__next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
+
+.carousel__prev {
+    left: 10px;
+}
+
+.carousel__next {
+    right: 10px;
+}
+
+/* Controles de navegación prev/next en dispositivos móviles */
+@media (max-width: 768px) {
+    .carousel__prev, .carousel__next {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2em;
+    }
+}
+
+/* Controles de navegación */
+.carousel__nav {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__nav label {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel__nav label:hover, 
+.carousel__nav label:checked {
+    background-color: #333;
+}
+
+/* Ajustes para la información del producto */
+.product-info {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Centra el texto dentro de .product-info */
+}
+
+/* Estilos para el título del producto */
+.product-info h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Estilos para el párrafo */
+.product-info p {
+    margin: 0 0 20px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Estilos para la calificación */
+.product-info .rating {
+    margin: 0 0 20px 0;
+    font-size: 1.5em;
+    color: #f5c518;
+}
+
+/* Estilos para la cantidad */
+.product-info .quantity {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.product-info .quantity button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-info .quantity input {
+    width: 60px;
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+/* Estilos para la talla y colores */
+.product-info .size, .product-info .color {
+    margin: 0 0 20px 0;
+}
+
+.product-info .size span, .product-info .color span {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.product-info .color span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* carrusel product end */

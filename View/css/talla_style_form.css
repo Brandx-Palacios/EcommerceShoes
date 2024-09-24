@@ -52,11 +52,11 @@ body{
     border: none;
     border-bottom: 1px solid black;
 }
-
+/*
 .cont-t-prod .in-form:active{
 
 }
-
+*/
 .cont-t-prod .in-form:focus{
     outline: none;
     border-bottom: 1px solid red;
